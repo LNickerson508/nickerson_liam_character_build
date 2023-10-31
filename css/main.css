@@ -72,27 +72,27 @@ header {
     background-image: url('../images/marvelSprites.jpg');
 }
 
-#carol {
+#g2 {
     background-position: -150px 0;
 }
 
-#clint {
+#g3 {
     background-position: -300px 0;
 }
 
-#hulk {
+#g4 {
     background-position: -450px 0;
 }
 
-#thor {
+#g5 {
     background-position: -600px 0;
 }
 
-#widow {
+#g6 {
     background-position: -750px 0;
 }
 
-#cap:hover, #carol:hover, #clint:hover, #hulk:hover, #thor:hover, #widow:hover {
+#g1:hover, #g2:hover, #g3:hover, #g4:hover, #g5:hover, #g6:hover {
     background-position-y: -150px ;
 }
 
