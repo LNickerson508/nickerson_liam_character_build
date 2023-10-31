@@ -15,19 +15,19 @@ body {
 /* main header rules */
 
 header {
-    background-color: red;
+    background-color: rgb(255, 0, 0);
     padding: 10px 0px;
 }
 
 #main-logo {
-    width: 300px;
+    width: 500px;
     display: block;
     margin: 0px auto;
 }
 
 #character_nav {
     background-color: #675050;
-    background-image: url('../images/characters_art_mas_mob_01.jpeg');
+    background-image: url('../images/ac6_hero.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-blend-mode: multiply;
@@ -43,16 +43,16 @@ header {
 
 .characters li {
     height: 220px;
-    margin: 10px 8px;
+    margin: 25px 25px;
     background-color: black;
     text-align: left;
     cursor: pointer;
     transition: box-shadow 0.2s ease;
-    box-shadow: 0 155px 0 0 rgb(255, 0, 0) inset;
+    box-shadow: 0 155px 0 0 rgb(61, 61, 61) inset;
 }
 
 .characters li:hover {
-    box-shadow: 0 220px 0 0 rgb(255, 0, 0) inset;
+    box-shadow: 0 220px 0 0 rgb(70, 0, 0) inset;
 }
 
 .characters li h5 {
@@ -64,12 +64,14 @@ header {
     text-decoration: none;
 }
 
-/*--Sprite--*/
+/* Sprite Sheet (WIP) */
+
+
 
 .sprite {
     width: 150px;
     height: 150px;
-    background-image: url('../images/marvelSprites.jpg');
+    background-image: url('../images/character_spritesheet.png');
 }
 
 #g2 {
@@ -96,8 +98,13 @@ header {
     background-position-y: -150px ;
 }
 
+
 /*--Footer Rules--*/
 
+
+#instructions{
+    text-align: center;
+}
 footer {
     color: white;
     padding: 20px 0;
