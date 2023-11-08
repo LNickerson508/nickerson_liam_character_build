@@ -4,7 +4,7 @@ html, body {
 
 body {
     font-family: Arial, Helvetica, sans-serif;
-    background-color: black;
+    background-color: rgb(19, 19, 19);
     color: white;
 }
 
@@ -15,15 +15,19 @@ body {
 /* main header rules */
 
 header {
-    background-color: rgb(255, 0, 0);
-    padding: 10px 0px;
+    background-color: rgb(19, 19, 19);
+    padding: 30px 0px;
+    background-image: url(../images/ac6_hero2.jpg);
+    background-size: cover;
+    background-position: 0px -450px;
 }
 
 #main-logo {
-    width: 500px;
+    width: 600px;
     display: block;
     margin: 0px auto;
 }
+
 
 #character_nav {
     background-color: #675050;
@@ -31,6 +35,7 @@ header {
     background-repeat: no-repeat;
     background-size: cover;
     background-blend-mode: multiply;
+    background-position: 0px -100px;
 }
 
 .characters {
@@ -43,11 +48,11 @@ header {
 
 .characters li {
     height: 220px;
-    margin: 25px 25px;
+    margin: 50px 20px;
     background-color: black;
     text-align: left;
     cursor: pointer;
-    transition: box-shadow 0.2s ease;
+    transition: box-shadow 0.25s ease;
     box-shadow: 0 155px 0 0 rgb(61, 61, 61) inset;
 }
 
@@ -62,6 +67,30 @@ header {
 
 .characters li a {
     text-decoration: none;
+}
+
+#rg-logo {
+    width: 250px;
+    display: block;
+    margin: 0px auto;
+}
+
+article, #instructions {
+    padding: 20px;
+}
+
+article h3, #instructions h3 {
+    font-size: 32px;
+    text-align: center;
+    margin-bottom: 14px;
+}
+
+article p, #instructions p {
+    width: 80%;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    margin: 4px auto;
 }
 
 /* Sprite Sheet (WIP) */
@@ -101,12 +130,102 @@ header {
 
 /*--Footer Rules--*/
 
+.stickyfooter {
+    position: sticky;
+    top: 100%;
+    height: 80px;
+    background-color: rgb(40, 37, 37);
+}
 
 #instructions{
     text-align: center;
 }
+
 footer {
     color: white;
     padding: 20px 0;
     text-align: center;
+}
+
+.stickyfooter {
+    position: sticky;
+    top: 100%;
+    height: 60px;
+    background-color: rgb(40, 37, 37);
+}
+
+/*-- Lightbox --*/
+
+.lightbox {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background-color: rgba(0, 0, 0, 0.90);
+    background-image: url(../images/g1_ac.webp);
+    background-repeat: no-repeat;
+    background-size: 55vh;
+    background-position: 80px 60px;
+    z-index: 5000;
+    display: none;
+}
+
+#lightbox2 {
+    background-image: url(../images/g2_ac.webp);
+}
+
+#lightbox3 {
+    background-image: url(../images/g3_ac.webp);
+}
+
+#lightbox4 {
+    background-image: url(../images/g4_ac.webp);
+}
+
+#lightbox5 {
+    background-image: url(../images/g5_ac.webp);
+}
+
+#lightbox6 {
+    background-image: url(../images/g6_ac.webp);
+}
+
+.lightbox_close {
+    position: relative;
+    top: 20px;
+    left: 90%;
+    color: white;
+    font-size: 48px;
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+.lightbox_close:hover {
+    opacity: 0.5;
+    color: red;
+}
+
+.lightbox article {
+    width: 55%;
+    margin-left: 40%;
+    padding-top: 50px;
+}
+
+.lb_text, .lb_heading, .lb_subheading {
+    text-align: left;
+}
+
+.lb_subheading {
+    margin-top: 0px;
+}
+
+.lb_text {
+    margin-left: 0;
+    padding-top: 32px;
+    line-height: 1.6 !important;
+}
+
+.lightbox:target {
+    display: block;
 }
